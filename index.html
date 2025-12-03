@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ИИ-сценарист для TikTok — Проектное предложение</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>ИИ-сценарист для TikTok</h1>
+                </div>
+                <nav class="nav">
+                    <a href="#description" class="nav-link">Описание</a>
+                    <a href="#interface" class="nav-link">Интерфейс</a>
+                    <a href="#estimate" class="nav-link">Оценка</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Сервис для создания сценариев TikTok на основе референсов</h2>
+                <p class="hero-subtitle">Автоматическая генерация и адаптация сценариев с помощью ИИ</p>
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <div class="stat-value">9-13 дней</div>
+                        <div class="stat-label">Разработка</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">120-180 тыс. ₽</div>
+                        <div class="stat-label">Стоимость</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">1-2 месяца</div>
+                        <div class="stat-label">Срок реализации</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Description Section -->
+    <section id="description" class="section">
+        <div class="container">
+            <h2 class="section-title">Описание работы сервиса</h2>
+            <p class="section-intro">Пользовательский флоу состоит из 5 основных этапов</p>
+            
+            <div class="flow-container">
+                <div class="flow-card" data-step="1">
+                    <div class="flow-number">1</div>
+                    <h3 class="flow-title">Главная страница с таблицей референсов</h3>
+                    <p class="flow-preview">Таблица всех референс-видео с их статусами и сценариями</p>
+                    <button class="flow-toggle">Подробнее</button>
+                    <div class="flow-details">
+                        <p>Пользователь видит таблицу всех референс-видео с их статусами и сценариями. Каждая строка содержит:</p>
+                        <ul>
+                            <li>Референс-видео (название/ссылка)</li>
+                            <li>Выбранный суб-сценарий (dropdown с 3 вариантами)</li>
+                            <li>Статус (Черновик → В работе → Готово → Съемки → Опубликовано)</li>
+                            <li>Креатор (за кем закреплён сценарий)</li>
+                            <li>Действия (Просмотреть / Редактировать)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="flow-card" data-step="2">
+                    <div class="flow-number">2</div>
+                    <h3 class="flow-title">Добавление референса</h3>
+                    <p class="flow-preview">Загрузка видео или вставка ссылки</p>
+                    <button class="flow-toggle">Подробнее</button>
+                    <div class="flow-details">
+                        <p>Пользователь добавляет новый референс: загружает файл или вставляет ссылку на видео. Система автоматически / вручную:</p>
+                        <ul>
+                            <li>Расшифровывает видео в текст</li>
+                            <li>Определяет тип (нишевый/общий)</li>
+                            <li>Генерирует 3 варианта суб-сценариев</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="flow-card" data-step="3">
+                    <div class="flow-number">3</div>
+                    <h3 class="flow-title">Выбор и доработка суб-сценария</h3>
+                    <p class="flow-preview">Выбор одного из 3 вариантов и уточнение параметров</p>
+                    <button class="flow-toggle">Подробнее</button>
+                    <div class="flow-details">
+                        <p>Пользователь выбирает один из 3 суб-сценариев через dropdown в таблице. Затем уточняет параметры:</p>
+                        <ul>
+                            <li>Ниша</li>
+                            <li>Бренд/товар</li>
+                            <li>Тайминг видео (10–15 сек, 30 сек и т.д.)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="flow-card" data-step="4">
+                    <div class="flow-number">4</div>
+                    <h3 class="flow-title">Генерация финального сценария</h3>
+                    <p class="flow-preview">Адаптация суб-сценария под заданные параметры</p>
+                    <button class="flow-toggle">Подробнее</button>
+                    <div class="flow-details">
+                        <p>ИИ адаптирует выбранный суб-сценарий под заданные параметры, создавая полноценный сценарий. Статус меняется на "В работе".</p>
+                    </div>
+                </div>
+
+                <div class="flow-card" data-step="5">
+                    <div class="flow-number">5</div>
+                    <h3 class="flow-title">Доработка сценария</h3>
+                    <p class="flow-preview">Инструменты для улучшения готового сценария</p>
+                    <button class="flow-toggle">Подробнее</button>
+                    <div class="flow-details">
+                        <p>В режиме редактирования доступны действия:</p>
+                        <ul>
+                            <li>Дописать цепляющий хук</li>
+                            <li>Усилить интеграцию бренда</li>
+                            <li>Укоротить/удлинить сценарий</li>
+                            <li>Упростить/усложнить текст</li>
+                        </ul>
+                        <p>После завершения статус меняется на "Готово".</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="teamwork-section">
+                <h3 class="subsection-title">Командная работа</h3>
+                <div class="teamwork-cards">
+                    <div class="teamwork-card">
+                        <div class="teamwork-icon">👥</div>
+                        <p>Креаторы могут быть назначены на сценарии</p>
+                    </div>
+                    <div class="teamwork-card">
+                        <div class="teamwork-icon">🔍</div>
+                        <p>Фильтрация и сортировка по статусу, креатору, дате</p>
+                    </div>
+                    <div class="teamwork-card">
+                        <div class="teamwork-icon">📤</div>
+                        <p>Экспорт готовых сценариев</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interface Section -->
+    <section id="interface" class="section">
+        <div class="container">
+            <h2 class="section-title">Интерфейс и структура приложения</h2>
+            
+            <!-- Table Section -->
+            <div class="interface-block">
+                <h3 class="subsection-title">Главная таблица референсов</h3>
+                <div class="table-container">
+                    <table class="interactive-table">
+                        <thead>
+                            <tr>
+                                <th>Референс / Видео</th>
+                                <th>Суб-сценарий</th>
+                                <th>Статус</th>
+                                <th>Креатор</th>
+                                <th>Действия</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Видео 1</td>
+                                <td><span class="dropdown-badge">Текущий: Сценарий A</span></td>
+                                <td><span class="status-badge status-in-progress">В работе</span></td>
+                                <td>Алекс</td>
+                                <td>
+                                    <button class="action-btn" data-modal="view">Просмотреть</button>
+                                    <button class="action-btn" data-modal="edit">Редактировать</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Видео 2</td>
+                                <td><span class="dropdown-badge">Текущий: Сценарий B</span></td>
+                                <td><span class="status-badge status-ready">Готово</span></td>
+                                <td>Мария</td>
+                                <td>
+                                    <button class="action-btn" data-modal="view">Просмотреть</button>
+                                    <button class="action-btn" data-modal="edit">Редактировать</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Видео 3</td>
+                                <td><span class="dropdown-badge dropdown-empty">Нет выбранного</span></td>
+                                <td><span class="status-badge status-draft">Черновик</span></td>
+                                <td>Алекс</td>
+                                <td>
+                                    <button class="action-btn" data-modal="view">Просмотреть</button>
+                                    <button class="action-btn" data-modal="edit">Редактировать</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-info">
+                    <p><strong>Логика работы:</strong> Суб-сценарий — dropdown с 3 вариантами. При выборе открывается форма уточнения параметров. Статус автоматически обновляется. Креатор назначается при создании сценария или вручную.</p>
+                </div>
+            </div>
+
+            <!-- Screens Section -->
+            <div class="interface-block">
+                <h3 class="subsection-title">Экраны и оверлеи</h3>
+                <div class="screens-grid">
+                    <div class="screen-card" data-screen="1">
+                        <h4>Главная страница</h4>
+                        <p>Таблица всех референсов с фильтрами и сортировкой</p>
+                    </div>
+                    <div class="screen-card" data-screen="2">
+                        <h4>Авторизация</h4>
+                        <p>Вход/регистрация пользователей</p>
+                    </div>
+                    <div class="screen-card" data-screen="3">
+                        <h4>Добавление референса</h4>
+                        <p>Форма загрузки видео или вставки ссылки</p>
+                    </div>
+                    <div class="screen-card" data-screen="4">
+                        <h4>Выбор суб-сценария</h4>
+                        <p>Оверлей с 3 вариантами и формой уточнения параметров</p>
+                    </div>
+                    <div class="screen-card" data-screen="5">
+                        <h4>Редактирование сценария</h4>
+                        <p>Оверлей с текстом сценария и инструментами доработки</p>
+                    </div>
+                    <div class="screen-card" data-screen="6">
+                        <h4>Управление креаторами</h4>
+                        <p>Список креаторов с поиском и фильтрами</p>
+                    </div>
+                    <div class="screen-card" data-screen="7">
+                        <h4>Добавление креатора</h4>
+                        <p>Форма создания нового креатора (имя, email, роль)</p>
+                    </div>
+                    <div class="screen-card" data-screen="8">
+                        <h4>Настройки таблицы</h4>
+                        <p>Фильтры по статусу, креатору, дате; сортировка</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Details Spoiler -->
+            <div class="interface-block">
+                <button class="spoiler-toggle">
+                    <h3 class="subsection-title">Технические детали</h3>
+                    <span class="spoiler-icon">▼</span>
+                </button>
+                <div class="spoiler-content">
+                    <!-- Backend API Section -->
+                    <div class="interface-block">
+                        <h3 class="subsection-title">Backend API</h3>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    <span>Расшифровка видео</span>
+                                    <span class="accordion-icon">+</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <p>Конвертация видео/аудио в текст</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    <span>Генерация суб-сценариев</span>
+                                    <span class="accordion-icon">+</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <p>Создание 3 вариантов на основе текста референса</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    <span>Адаптация сценария</span>
+                                    <span class="accordion-icon">+</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <p>Доработка под нишу, бренд, тайминг</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    <span>Доработка сценария</span>
+                                    <span class="accordion-icon">+</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <p>Применение улучшений (хук, бренд, длина, сложность)</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    <span>Управление креаторами</span>
+                                    <span class="accordion-icon">+</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <p>CRUD операции</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    <span>Управление статусами</span>
+                                    <span class="accordion-icon">+</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <p>Изменение статуса сценария</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    <span>Назначение креатора</span>
+                                    <span class="accordion-icon">+</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <p>Привязка сценария к пользователю</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    <span>Экспорт сценария</span>
+                                    <span class="accordion-icon">+</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <p>Выгрузка в различных форматах</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Database Structure -->
+                    <div class="interface-block">
+                        <h3 class="subsection-title">Структура базы данных</h3>
+                        <div class="db-grid">
+                            <div class="db-card" data-entity="user">
+                                <h4>User</h4>
+                                <p>Пользователи системы</p>
+                                <div class="db-details">
+                                    <p><strong>Поля:</strong> имя, email, роль, статус активности</p>
+                                </div>
+                            </div>
+                            <div class="db-card" data-entity="reference">
+                                <h4>Reference</h4>
+                                <p>Референс-видео</p>
+                                <div class="db-details">
+                                    <p><strong>Поля:</strong> ссылка, название, тип (нишевый/общий), дата добавления, расшифровка</p>
+                                </div>
+                            </div>
+                            <div class="db-card" data-entity="subscenario">
+                                <h4>SubScenario</h4>
+                                <p>Суб-сценарии</p>
+                                <div class="db-details">
+                                    <p><strong>Поля:</strong> текст, связь с референсом, порядковый номер 1-3, выбран ли</p>
+                                </div>
+                            </div>
+                            <div class="db-card" data-entity="scenario">
+                                <h4>Scenario</h4>
+                                <p>Финальный сценарий</p>
+                                <div class="db-details">
+                                    <p><strong>Поля:</strong> текст, связь с суб-сценарием, ниша, бренд, тайминг, статус, версия</p>
+                                </div>
+                            </div>
+                            <div class="db-card" data-entity="assignment">
+                                <h4>Assignment</h4>
+                                <p>Назначение сценария креатору</p>
+                                <div class="db-details">
+                                    <p><strong>Поля:</strong> связь Scenario ↔ User</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estimate Section -->
+    <section id="estimate" class="section">
+        <div class="container">
+            <h2 class="section-title">Оценка времени и стоимости</h2>
+            
+            <!-- Cost Highlight -->
+            <div class="cost-highlight">
+                <div class="cost-main">
+                    <div class="cost-value">120,000 - 180,000 ₽</div>
+                    <div class="cost-label">Итоговая стоимость разработки</div>
+                </div>
+                <div class="cost-details">
+                    <div class="cost-item">
+                        <span class="cost-hours">60-90 часов</span>
+                        <span class="cost-rate">× 2,000 ₽/час</span>
+                    </div>
+                    <div class="cost-item">
+                        <span class="cost-days">9-13 рабочих дней</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Time Breakdown -->
+            <div class="estimate-tables">
+                <div class="estimate-table-block">
+                    <h3 class="subsection-title">Frontend (React/Next.js)</h3>
+                    <div class="table-container">
+                        <table class="estimate-table">
+                            <thead>
+                                <tr>
+                                    <th>Компонент</th>
+                                    <th>Время</th>
+                                    <th>Описание</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Авторизация</td>
+                                    <td>3-4 часа</td>
+                                    <td>Логин/регистрация, защита роутов</td>
+                                </tr>
+                                <tr>
+                                    <td>Главная таблица</td>
+                                    <td>6-7 часов</td>
+                                    <td>Таблица с фильтрами, сортировкой, dropdown для суб-сценариев</td>
+                                </tr>
+                                <tr>
+                                    <td>Формы</td>
+                                    <td>3-4 часа</td>
+                                    <td>Добавление референса, креатора, уточнение параметров</td>
+                                </tr>
+                                <tr>
+                                    <td>Оверлеи</td>
+                                    <td>6-7 часов</td>
+                                    <td>Выбор суб-сценария, редактирование сценария с инструментами</td>
+                                </tr>
+                                <tr>
+                                    <td>Управление креаторами</td>
+                                    <td>3-4 часа</td>
+                                    <td>Список, поиск, фильтры, добавление</td>
+                                </tr>
+                                <tr>
+                                    <td>UI/UX полировка</td>
+                                    <td>3-4 часа</td>
+                                    <td>Стилизация, адаптивность, анимации</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td><strong>Итого</strong></td>
+                                    <td><strong>18-25 часов</strong></td>
+                                    <td><strong>2.5-3.5 дня</strong></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="estimate-table-block">
+                    <h3 class="subsection-title">Backend (Node.js/Python)</h3>
+                    <div class="table-container">
+                        <table class="estimate-table">
+                            <thead>
+                                <tr>
+                                    <th>Компонент</th>
+                                    <th>Время</th>
+                                    <th>Описание</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Настройка проекта + БД</td>
+                                    <td>3-4 часа</td>
+                                    <td>Структура проекта, миграции, модели</td>
+                                </tr>
+                                <tr>
+                                    <td>API endpoints</td>
+                                    <td>9-10 часов</td>
+                                    <td>8 основных endpoints для всех операций</td>
+                                </tr>
+                                <tr>
+                                    <td>Интеграция с ИИ</td>
+                                    <td>6-7 часов</td>
+                                    <td>Промпты для генерации суб-сценариев и адаптации</td>
+                                </tr>
+                                <tr>
+                                    <td>Расшифровка видео</td>
+                                    <td>6-7 часов</td>
+                                    <td>Интеграция Whisper API или аналога</td>
+                                </tr>
+                                <tr>
+                                    <td>Бизнес-логика</td>
+                                    <td>6-7 часов</td>
+                                    <td>Статусы, workflow, назначение креаторов</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td><strong>Итого</strong></td>
+                                    <td><strong>25-35 часов</strong></td>
+                                    <td><strong>3.5-4.5 дня</strong></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="estimate-table-block">
+                    <h3 class="subsection-title">Интеграции и настройка</h3>
+                    <div class="table-container">
+                        <table class="estimate-table">
+                            <thead>
+                                <tr>
+                                    <th>Компонент</th>
+                                    <th>Время</th>
+                                    <th>Описание</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Настройка ИИ промптов</td>
+                                    <td>3-4 часа</td>
+                                    <td>Тонкая настройка промптов для качественных результатов</td>
+                                </tr>
+                                <tr>
+                                    <td>Загрузка файлов</td>
+                                    <td>3-4 часа</td>
+                                    <td>S3 или локальное хранилище</td>
+                                </tr>
+                                <tr>
+                                    <td>Тестирование и багфиксы</td>
+                                    <td>6-7 часов</td>
+                                    <td>Тесты, исправление ошибок, оптимизация</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td><strong>Итого</strong></td>
+                                    <td><strong>7-12 часов</strong></td>
+                                    <td><strong>1-1.5 дня</strong></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline -->
+            <div class="timeline-section">
+                <h3 class="subsection-title">Этапы разработки</h3>
+                <div class="timeline">
+                    <div class="timeline-item" data-week="1-2">
+                        <div class="timeline-content">
+                            <h4>Неделя 1-2: MVP и ИИ-интеграции</h4>
+                            <p>40-50 часов</p>
+                            <button class="timeline-toggle">Детали</button>
+                            <div class="timeline-details">
+                                <ul>
+                                    <li>Настройка проекта (Frontend + Backend) — 3-4 часа</li>
+                                    <li>База данных и модели — 3-4 часа</li>
+                                    <li>Авторизация — 3-4 часа</li>
+                                    <li>Главная таблица с базовым функционалом — 6-7 часов</li>
+                                    <li>Добавление референсов (без ИИ) — 3-4 часа</li>
+                                    <li>Расшифровка видео — 6-7 часов</li>
+                                    <li>Генерация суб-сценариев — 6-7 часов</li>
+                                    <li>Адаптация сценариев — 6-7 часов</li>
+                                    <li>Доработка сценариев — 3-4 часа</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-week="3">
+                        <div class="timeline-content">
+                            <h4>Неделя 3: Доработка и полировка</h4>
+                            <p>8-11 часов</p>
+                            <button class="timeline-toggle">Детали</button>
+                            <div class="timeline-details">
+                                <ul>
+                                    <li>Управление креаторами — 3-4 часа</li>
+                                    <li>Фильтры и сортировка — 3-4 часа</li>
+                                    <li>Экспорт сценариев — 2-3 часа</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-week="4">
+                        <div class="timeline-content">
+                            <h4>Неделя 4: Отладка</h4>
+                            <p>6-10 часов</p>
+                            <button class="timeline-toggle">Детали</button>
+                            <div class="timeline-details">
+                                <ul>
+                                    <li>Тестирование функционала — 3-4 часа</li>
+                                    <li>Исправление ошибок — 2-3 часа</li>
+                                    <li>Оптимизация производительности — 1-2 часа</li>
+                                    <li>Финальная проверка и полировка — 1-2 часа</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Summary -->
+            <div class="estimate-summary">
+                <div class="summary-card">
+                    <h4>Базовый вариант</h4>
+                    <p class="summary-value">50-75 часов</p>
+                    <p class="summary-label">7-9 рабочих дней</p>
+                </div>
+                <div class="summary-card">
+                    <h4>С учетом буфера</h4>
+                    <p class="summary-value">60-90 часов</p>
+                    <p class="summary-label">9-13 рабочих дней</p>
+                </div>
+                <div class="summary-card">
+                    <h4>Календарный срок</h4>
+                    <p class="summary-value">1-2 месяца</p>
+                    <p class="summary-label">После согласования проекта</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 ИИ-сценарист для TikTok. Проектное предложение от инженера по автоматизациям Коваленко Алексея для Zetter</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
